@@ -7,22 +7,22 @@ $config = [
         '@noAvatar' => '/uploads/no-avatar.jpg',
     ],
 
-//    'modules' => [
-//        'admin' => [
-//            'class' => \madetec\crm\Module::class,
-//            'viewPath' => '@vendor/madetec/crm/views',
-//            'as access' => [
-//                'class' => 'yii\filters\AccessControl',
-//                'except' => ['auth/login', 'auth/error', 'auth/captcha'],
-//                'rules' => [
-//                    [
-//                        'allow' => true,
-//                        'roles' => ['@'],
-//                    ],
-//                ],
-//            ],
-//        ],
-//    ],
+    'modules' => [
+        'admin' => [
+            'class' => \madetec\crm\Module::class,
+            'viewPath' => '@vendor/madetec/crm/views',
+            'as access' => [
+                'class' => 'yii\filters\AccessControl',
+                'except' => ['auth/login', 'auth/error', 'auth/captcha'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ],
+    ],
 
     'components' => [
         'assetManager' => [
