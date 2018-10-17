@@ -3,7 +3,7 @@
 namespace madetec\crm\controllers;
 
 use madetec\crm\forms\WarrantyAssignmentForm;
-use madetec\crm\forms\warrantyForm;
+use madetec\crm\forms\WarrantyForm;
 use madetec\crm\readModels\WarrantyReadModel;
 use madetec\crm\search\WarrantySearch;
 use madetec\crm\services\WarrantyManageService;
