@@ -22,4 +22,9 @@ $config = \yii\helpers\ArrayHelper::merge($app, $admin);
         ]
     ], 
 ```
-console command `php yii migrate`
+
+**Console command** `php yii migrate`
+
+**login:** `cp_admin`
+
+**password:** `1234567890`

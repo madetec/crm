@@ -32,7 +32,7 @@ class m180916_203430_create_users_table extends Migration
             'username' => 'cp_admin',
             'is_admin' => 1,
             'auth_key' => Yii::$app->security->generateRandomString(),
-            'password_hash' => Yii::$app->security->generatePasswordHash('fovfrGR%#gdofm$&*5GDFGds'),
+            'password_hash' => Yii::$app->security->generatePasswordHash('1234567890'),
             'created_at' => time(),
             'updated_at' => time(),
         ]);
