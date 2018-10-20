@@ -1,12 +1,12 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $order madetec\crm\entities\Order */
-/* @var $form madetec\crm\forms\OrderForm */
+/* @var $warranty madetec\crm\entities\Warranty */
+/* @var $form madetec\crm\forms\WarrantyForm */
 
-$this->title = 'Редактировать заказ №: ' . $order->id;
+$this->title = 'Редактировать гарантию №: ' . $warranty->id;
 $this->params['breadcrumbs'][] = ['label' => 'Звказы', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $order->id, 'url' => ['view', 'id' => $order->id]];
+$this->params['breadcrumbs'][] = ['label' => $warranty->id, 'url' => ['view', 'id' => $warranty->id]];
 $this->params['breadcrumbs'][] = 'Редактирование';
 ?>
 <div class="row">
