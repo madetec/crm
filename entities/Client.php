@@ -47,7 +47,7 @@ class Client extends \yii\db\ActiveRecord
         $client->email = $email;
         $client->params = $params;
         $client->avatar = $avatar;
-        $client->avatar = $status;
+        $client->status = $status;
         return $client;
     }
 
