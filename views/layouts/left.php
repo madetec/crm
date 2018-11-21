@@ -36,6 +36,7 @@
                     ['label' => 'Товары', 'icon' => ' fa-folder-open', 'url' => ['/admin/product']],
                     ['label' => 'Заказы', 'icon' => ' fa-folder-open', 'url' => ['/admin/order']],
                     ['label' => 'Гарантии', 'icon' => ' fa-folder-open', 'url' => ['/admin/warranty']],
+                    ['label' => 'Акции', 'icon' => ' fa-folder-open', 'url' => ['/admin/discount']],
                 ],
             ]
         ) ?>
