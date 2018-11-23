@@ -4,18 +4,18 @@ use yii\helpers\Html;
 use madetec\crm\entities\Client;
 
 /* @var $this yii\web\View */
-/* @var Client $client */
+/* @var \madetec\crm\entities\Product $product */
 
-$this->title = 'Редактировать клиента: ' . $client->name;
-$this->params['breadcrumbs'][] = ['label' => 'Клиенты', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $client->name, 'url' => ['view', 'id' => $client->id]];
+$this->title = 'Редактировать товар: ' . $product->name;
+$this->params['breadcrumbs'][] = ['label' => 'Товары', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $product->name, 'url' => ['view', 'id' => $product->id]];
 $this->params['breadcrumbs'][] = 'Редактирование';
 ?>
 <div class="row">
 
     <?= $this->render('_form', [
         'model' => $form,
-        'client' => $client,
+        'product' => $product,
     ]) ?>
 
 </div>
