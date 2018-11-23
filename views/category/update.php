@@ -6,10 +6,10 @@ use yii\helpers\Html;
 /* @var $category madetec\crm\entities\Category */
 /* @var $form madetec\crm\forms\CategoryForm */
 
-$this->title = 'Update Category: ' . $category->name;
+$this->title = 'редактировать категорию: ' . $category->name;
 $this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $category->name, 'url' => ['view', 'id' => $category->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'редактировать';
 ?>
 <div class="row">
 
