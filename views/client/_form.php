@@ -64,7 +64,7 @@ use yii\widgets\ActiveForm;
 <?php
 
 $script = <<<JS
-$('#clientform-phone').inputmask("+7 (999) 999-99-99");
+$('#clientform-phone').inputmask("+998 (99) 999-99-99");
 $('#clientform-date_of_birth').inputmask({alias:"yyyy-mm-dd", placeholder: "гггг-мм-дд",});
 JS;
 
