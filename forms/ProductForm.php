@@ -46,7 +46,7 @@ class ProductForm extends CompositeForm
             [['name', 'article'], 'string'],
             [['price', 'old_price'], 'double'],
             [['params'], 'string'],
-            [['quantity'], 'integer'],
+            [['quantity'], 'double'],
         ];
     }
 
