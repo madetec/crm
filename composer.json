@@ -22,7 +22,8 @@
     "dmstr/yii2-adminlte-asset": "^2.1",
     "yii-dream-team/yii2-upload-behavior": "^1.1",
     "la-haute-societe/yii2-save-relations-behavior": "*",
-    "kartik-v/yii2-widget-fileinput": "@dev"
+    "kartik-v/yii2-widget-fileinput": "@dev",
+    "vova07/yii2-imperavi-widget": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.*"
