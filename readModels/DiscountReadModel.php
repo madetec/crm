@@ -27,16 +27,11 @@ class DiscountReadModel
     }
 
     /**
-     * @return array|\yii\db\ActiveRecord[]
-     * @throws NotFoundHttpException
+     * @return mixed
      */
     public function findAll()
     {
-        if(!$discounts = Discount::find()->all())
-        {
-            throw new NotFoundHttpException('Categories not found');
-        }
-        return $discounts;
+        return Discount::find()->where(['status' => Discount::STATUS_ACTIVATED])->all();
     }
 
     /**
