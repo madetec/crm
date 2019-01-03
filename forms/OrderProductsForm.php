@@ -33,7 +33,8 @@ class OrderProductsForm extends Model
     {
         return [
             [['product', 'quantity'], 'required'],
-            [['product', 'quantity'], 'integer'],
+            [['product'], 'integer'],
+            ['quantity', 'double'],
         ];
     }
 
