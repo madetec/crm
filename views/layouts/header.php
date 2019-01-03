@@ -1,4 +1,5 @@
 <?php
+
 use yii\helpers\Html;
 use yii\helpers\Url;
 
@@ -42,9 +43,15 @@ use yii\helpers\Url;
                         <li class="user-footer">
                             <div class="align-center">
                                 <?= Html::a(
+                                    Html::tag('i',null,['class' => 'fa fa-shield']). ' Поменять пароль',
+                                    ['/admin/default/change-password'],
+                                    ['class' => 'btn btn-default btn-flat btn-block']
+                                ) ?>
+
+                                <?= Html::a(
                                     'Выход',
                                     ['/admin/auth/logout'],
-                                    ['data-method' => 'post', 'class' => 'btn btn-default btn-flat btn-block']
+                                    ['data-method' => 'post', 'class' => 'btn btn-info btn-flat btn-block']
                                 ) ?>
                             </div>
                         </li>
