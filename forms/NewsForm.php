@@ -36,10 +36,9 @@ class NewsForm extends CompositeForm
             $this->published_at = date('d-m-Y', $news->published_at);
             $this->status = $news->status;
             $this->_news = $news;
+        } else {
+            $this->photos = new NewsPhotosForm();
         }
-
-        $this->photos = new NewsPhotosForm();
-
         parent::__construct($config);
     }
 

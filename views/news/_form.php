@@ -46,7 +46,7 @@ use yii\widgets\ActiveForm;
         <div class="box">
             <div class="box-body">
                 <?= $form->field($model, 'status')->dropDownList($model->statusList()) ?>
-                <?= $form->field($model, 'published_at')->textInput(['maxlength' => true, 'value' => date('d-m-Y')]) ?>
+                <?= $form->field($model, 'published_at')->textInput(['maxlength' => true, 'placeholder' => date('d-m-Y')]) ?>
 
                 <div class="form-group">
                     <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success btn-flat btn-block']) ?>
