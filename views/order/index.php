@@ -45,6 +45,17 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'filter' => $searchModel->getProductList()
                             ],
                             [
+                                'label' => 'Количество',
+                                'value' => function (Order $model) {
+                                    $products = [];
+                                    foreach ($model->orderProducts as $product) {
+                                        $products[] = $product->product->name . ' (' . $product->quantity . ')';
+                                    }
+                                    return implode("\n\r", $products);
+                                },
+                                'format' => 'raw'
+                            ],
+                            [
                                 'attribute' => 'client_id',
                                 'value' => function (Order $order) {
                                     return OrderHelper::getClientLink($order->client);
