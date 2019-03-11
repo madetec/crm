@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
                     <?= $form->field($product, '[' . $k . ']product')->dropDownList($product->getProductList(), ['prompt' => 'Выберите товар'])->label(false) ?>
                 </div>
                 <div class="col-md-4">
-                    <?= $form->field($product, '[' . $k . ']quantity')->textInput(['type' => 'number'])->label(false) ?>
+                    <?= $form->field($product, '[' . $k . ']quantity')->textInput()->label(false) ?>
                 </div>
                 <div class="col-md-1">
                     <?= Html::tag('i', '', ['class' => 'fa fa-plus', 'style' => 'line-height: 35px; cursor: pointer;']) ?>
