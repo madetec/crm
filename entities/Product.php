@@ -19,7 +19,7 @@ use yiidreamteam\upload\ImageUploadBehavior;
  * @property float $price
  * @property float $old_price
  * @property string $params
- * @property int $quantity
+ * @property float $quantity
  * @property int $status
  * @property int $views
  *
@@ -84,10 +84,10 @@ class Product extends \yii\db\ActiveRecord
     }
 
     /**
-     * @param int $quantity
+     * @param float $quantity
      * @throws \LogicException
      */
-    public function downQuantity(int $quantity)
+    public function downQuantity(float $quantity)
     {
         if($this->quantity > $quantity)
         {
@@ -98,10 +98,10 @@ class Product extends \yii\db\ActiveRecord
     }
 
     /**
-     * @param int $quantity
+     * @param float $quantity
      * @throws \LogicException
      */
-    public function upQuantity(int $quantity)
+    public function upQuantity(float $quantity)
     {
         if($quantity > 0)
         {
