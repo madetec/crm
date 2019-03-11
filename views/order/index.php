@@ -45,6 +45,13 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'filter' => $searchModel->getProductList()
                             ],
                             [
+                                'attribute' => 'quantity',
+                                'value' => function (Order $model) {
+                                    return $model->quantity;
+                                },
+                                'format' => 'raw'
+                            ],
+                            [
                                 'attribute' => 'client_id',
                                 'value' => function (Order $order) {
                                     return OrderHelper::getClientLink($order->client);
