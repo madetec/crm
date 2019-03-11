@@ -40,8 +40,22 @@ $this->params['breadcrumbs'][] = $this->title;
                                 },
                                 'format' => 'raw',
                             ],
-                            'price:currency',
-                            'old_price:currency',
+                            [
+                                    'attribute' => 'price',
+                                    'value' => function($model)
+                                    {
+                                        return \Yii::$app->formatter->asCurrency($model->price, "So'm");
+                                    },
+                                    'format' => 'raw'
+                            ],
+                            [
+                                    'attribute' => 'old_price',
+                                    'value' => function($model)
+                                    {
+                                        return \Yii::$app->formatter->asCurrency($model->price, "So'm");
+                                    },
+                                    'format' => 'raw'
+                            ],
                             'quantity',
                             'article',
                             [
