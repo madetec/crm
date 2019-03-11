@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     foreach ($model->orderProducts as $product) {
                                         $products[] = $product->product->name . ' (' . $product->quantity . ')';
                                     }
-                                    return implode("\n\r", $products);
+                                    return implode("<br/>", $products);
                                 },
                                 'format' => 'raw'
                             ],
