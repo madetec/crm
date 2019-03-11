@@ -52,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     'attribute' => 'old_price',
                                     'value' => function($model)
                                     {
-                                        return \Yii::$app->formatter->asCurrency($model->price, "som");
+                                        return \Yii::$app->formatter->asCurrency($model->old_price, "som");
                                     },
                                     'format' => 'raw'
                             ],
